@@ -82,7 +82,7 @@ private:
   	float angle;
 	void pushStart()
 	{
-		analogWrite(pin, 255);
+		ledcWrite(channel, 255);
 		delay(50);
 
 		powerOff = false;
@@ -92,10 +92,12 @@ public:
 	float channel;
 	Vibration(int motorPin, int motorAngle) : pin(motorPin), angle(motorAngle)
 	{
+        ledcSetup(channel, 5000, 8);
 	}
 
 	void begin(){
 		pinMode(pin, OUTPUT);
+        ledcAttachPin(pin, channel);
 		powerOff = true;
 	}
 
@@ -111,13 +113,13 @@ public:
           	Serial.print("PWM: ");
      		Serial.println(pwm);	
 			pushStart();
-			analogWrite(pin, int(pwm));
+			ledcWrite(channel, int(pwm));
 		}
 		else
 		{
           	Serial.print("PWM: ");
      		Serial.println(pwm);
-			analogWrite(pin, int(pwm));
+			ledcWrite(channel, int(pwm));
 		}	
 	}
 
