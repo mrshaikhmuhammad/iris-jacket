@@ -15,10 +15,11 @@
  ██║██║  ██║██║███████║
  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝
 ```
+</div align="center">
 
 # IRIS — Intelligent Real-time Indoor/outdoor Safety System
 
-## 🌟 The Problem We're Solving
+## The Problem We're Solving
 
 Over **285 million people** worldwide live with visual impairment. Existing aids — white canes, guide dogs — are effective but limited: they can't detect obstacles at chest or head height, can't identify *what* an obstacle is, and provide no warning before physical contact.
 
@@ -29,7 +30,7 @@ Over **285 million people** worldwide live with visual impairment. Existing aids
 
 ---
 
-## 🎯 Key Features
+## Key Features
 
 | Feature | Description |
 |---|---|
@@ -40,7 +41,7 @@ Over **285 million people** worldwide live with visual impairment. Existing aids
 
 ---
 
-## 🏗️ Architecture <a name="architecture"></a>
+## Architecture <a name="architecture"></a>
 
 ```
 ╔════════════════════════════════════════════════════════════════╗
@@ -95,7 +96,7 @@ Over **285 million people** worldwide live with visual impairment. Existing aids
 
 ---
 
-## 🔧 Hardware Components <a name="hardware"></a>
+## Hardware Components <a name="hardware"></a>
 
 | # | Component | Qty | Role |
 |---|---|---|---|
@@ -153,7 +154,7 @@ ESP32 GPIO ──[1kΩ]───► NPN Base
 
 ---
 
-## 📐 Mathematical Model — Directional Vibration <a name="math-model"></a>
+## Mathematical Model — Directional Vibration <a name="math-model"></a>
 
 This is the core innovation. Rather than simply turning motors on/off, IRIS uses **trigonometric vector projection** to compute *exactly* how much each motor should vibrate based on two distance inputs.
 
@@ -215,7 +216,7 @@ This prevents the "motor that hums but doesn't spin" bug seen in many haptic pro
 
 ---
 
-## 🤖 Azure AI Vision Pipeline
+## Azure AI Vision Pipeline
 
 Every 3 seconds, the Raspberry Pi runs this pipeline:
 
@@ -280,7 +281,7 @@ is_urgent = (name in URGENT_OBSTACLES) and (distance != "FAR")
 
 ---
 
-## 📡 Communication Protocol <a name="communication"></a>
+## Communication Protocol <a name="communication"></a>
 
 ### Device Discovery — mDNS
 
@@ -313,31 +314,6 @@ Examples:
 | HTTP | ~100ms+ | High | Request/response overhead |
 
 For haptic feedback, **speed beats reliability** — a missed vibration packet is imperceptible; a delayed one creates lag the user feels.
-
----
-
-## 🗣️ Voice Output System
-
-```
-Priority Order for Speech Generation:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1. 🔴 URGENT obstacles (interrupt current speech)
-      → "Warning! Car on left, very close!"
-
-2. 🟡 NEAR obstacles
-      → "Stairs on right"
-
-3. 🟢 People count
-      → "Two people nearby"
-
-4. 🔵 Scene description (fallback)
-      → "A person walking on a sidewalk"
-
-5. ✅ All clear
-      → "Path clear"
-```
-
-Speech runs in a **separate OS process** (`espeak`) so it never blocks the sensor or vibration loop.
 
 ---
 
