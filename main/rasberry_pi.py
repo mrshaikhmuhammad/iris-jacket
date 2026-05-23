@@ -12,6 +12,7 @@ import threading
 import socket
 import subprocess
 from datetime import datetime
+from dotenv import load_dotenv
 
 # Azure imports
 from azure.cognitiveservices.vision.computervision import ComputerVisionClient
@@ -23,8 +24,8 @@ from msrest.authentication import CognitiveServicesCredentials
 # ============================================
 
 # Azure credentials
-AZURE_ENDPOINT = "https://analyserr1.cognitiveservices.azure.com/"
-AZURE_KEY = "DkuOGCe2OJYPlhfI0I8fswJhERW0QIk9uzvtzc20L5JsuuvKYoBKJQQJ99CAACGhslBXJ3w3AAAEACOGXd4x"
+AZURE_ENDPOINT = os.getenv("AZURE_ENDPOINT")
+AZURE_KEY      = os.getenv("AZURE_KEY")
 
 # ESP32 WiFi UDP settings (using mDNS hostname)
 ESP32_HOSTNAME = "esp32.local"  # mDNS hostname - no need to know IP!
