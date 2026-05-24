@@ -421,25 +421,16 @@ az cognitiveservices account keys list \
 ## Project Structure
 
 ```
-IRIS-Jacket/
+IRIS-Jacket
 │
-├── main.ino                  # ESP32 firmware (Arduino C++)
-│   ├── class Ultrasonic          # HC-SR04 sensor abstraction
-│   ├── class Vibration           # PWM motor + math model
-│   ├── connectWiFi()             # mDNS + UDP setup
-│   └── processCommand()          # UDP command parser
-│
-├── vision.py                 # Raspberry Pi main script (Python)
-│   ├── init_*()                  # System initialization
-│   ├── capture_image()           # Pi Camera capture
-│   ├── analyze_image()           # Azure Vision API
-│   ├── process_object()          # Position + distance logic
-│   ├── send_haptic_feedback()    # UDP → ESP32
-│   └── main_loop()               # 3-second cycle
-│
-├── circuit/
+├── main                          
+│   ├── esp32.ino                 # ESP32 firmware (Arduino C++)
+│   └── rasberry_pi.py            # Raspberry Pi main script (Python)
+|
+├── circuit
 │   └── esp32_circuit.png         # Tinkercad wiring diagram
 │
+├── LICENSE
 └── README.md
 ```
 
