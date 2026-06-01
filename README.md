@@ -464,4 +464,22 @@ IRIS-Jacket
 
 ```
 MIT License — Free to use, modify, and distribute with attribution.
+
 ```
+
+## Contributors
+
+<p align="left">
+<a href="https://www.github.com/mrshaikhmuhammad">
+<img src="https://avatars.githubusercontent.com/u/210817488?s=96&v=4" width="64" height="64" style="border-radius:50%;" alt="mrshaikhmuhammad"/>
+</a>
+<a href="https://www.github.com/shahzebalipirzada">
+<img src="https://avatars.githubusercontent.com/u/137106966?s=96&v=4" width="64" height="64" style="border-radius:50%;" alt="shahzebalipirzada"/>
+</a>
+<a href="https://www.github.com/khizarbinmaalik">
+<img src="https://avatars.githubusercontent.com/u/85388241?s=96&v=4" width="64" height="64" style="border-radius:50%;" alt="khizarbinmaalik"/>
+</a>
+<a href="https://www.github.com/shahrukh-aidev">
+<img src="https://avatars.githubusercontent.com/u/212114358?s=96&v=4" width="64" height="64" style="border-radius:50%;" alt="shahrukh-aidev"/>
+</a>
+</p>
