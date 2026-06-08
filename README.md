@@ -474,16 +474,16 @@ MIT License — Free to use, modify, and distribute with attribution.
 ## Contributors
 
 <p align="left">
-<a href="https://www.github.com/mrshaikhmuhammad" asset/jacket.png>
+<a href="https://www.github.com/mrshaikhmuhammad" target="_blank">
 <img src="https://avatars.githubusercontent.com/u/210817488?s=96&v=4" width="64" height="64" style="border-radius:50%;" alt="mrshaikhmuhammad"/>
 </a>
-<a href="https://www.github.com/shahzebalipirzada" asset/jacket.png>
+<a href="https://www.github.com/shahzebalipirzada" target="_blank">
 <img src="https://avatars.githubusercontent.com/u/137106966?s=96&v=4" width="64" height="64" style="border-radius:50%;" alt="shahzebalipirzada"/>
 </a>
-<a href="https://www.github.com/khizarbinmaalik" asset/jacket.png>
+<a href="https://www.github.com/khizarbinmaalik" target="_blank">
 <img src="https://avatars.githubusercontent.com/u/85388241?s=96&v=4" width="64" height="64" style="border-radius:50%;" alt="khizarbinmaalik"/>
 </a>
-<a href="https://www.github.com/shahrukh-aidev" asset/jacket.png>
+<a href="https://www.github.com/shahrukh-aidev" target="_blank">
 <img src="https://avatars.githubusercontent.com/u/212114358?s=96&v=4" width="64" height="64" style="border-radius:50%;" alt="shahrukh-aidev"/>
 </a>
 </p>
