@@ -28,7 +28,7 @@ Over **285 million people** worldwide live with visual impairment. Existing aids
 
 ---
 
-<img src="/assets/jacket.png" alt="mrshaikhmuhammad">
+<img src="asset/jacket.png" alt="iris-jacket">
 
 ---
 
