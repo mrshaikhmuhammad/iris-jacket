@@ -17,6 +17,10 @@
 </pre>
 </div>
 
+---
+
+<img src="asset/jacket.png" alt="iris-jacket">
+
 ## The Problem We're Solving
 
 Over **285 million people** worldwide live with visual impairment. Existing aids — white canes, guide dogs — are effective but limited: they can't detect obstacles at chest or head height, can't identify *what* an obstacle is, and provide no warning before physical contact.
@@ -25,10 +29,6 @@ Over **285 million people** worldwide live with visual impairment. Existing aids
 - **Feels** obstacles through vibration before the user reaches them
 - **Sees** the environment through AI-powered camera analysis  
 - **Scales** intensity — light buzz for far obstacles, urgent pulse for immediate danger
-
----
-
-<img src="asset/jacket.png" alt="iris-jacket">
 
 ---
 
